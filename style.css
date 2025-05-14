@@ -1,0 +1,92 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f4f7f9;
+  color: #333;
+}
+
+.hero-section {
+  background: linear-gradient(145deg, #ffffff, #e2f0ff);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00b894;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.nav-links a {
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #6c5ce7;
+}
+
+button {
+  background: #00cec9;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.builder {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.template {
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.theme-default {
+  border-left: 6px solid #6c5ce7;
+}
+
+.theme-dark {
+  background: #2d3436;
+  color: white;
+  border-left: 6px solid #00cec9;
+}
+
+#resumeOutput a {
+  color: #0984e3;
+  text-decoration: none;
+}
