@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Resume Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero-section">
+    <nav>
+      <div class="logo">ResumePro</div>
+      <div class="nav-links">
+        <a href="#" id="themeSwitch">Switch Theme</a>
+        <a href="#" id="templateSwitch">Switch Template</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <h1>Create Your <span class="highlight">Professional Resume</span></h1>
+      <p>Quickly build a modern resume with customizable templates and color themes.</p>
+      <button id="startBtn">Start Building</button>
+    </div>
+  </header>
+
+  <section class="builder" id="builderSection" style="display:none;">
+    <form id="resumeForm">
+      <h2>Resume Details</h2>
+      <input type="text" placeholder="Full Name" name="name" required />
+      <input type="text" placeholder="Guardian Name" name="guardian" />
+      <input type="text" placeholder="Email" name="email" required />
+      <input type="text" placeholder="Phone" name="phone" required />
+      <input type="text" placeholder="Education" name="education" required />
+      <input type="text" placeholder="Company (optional)" name="company" />
+      <input type="text" placeholder="Project (optional)" name="project" />
+      <input type="text" placeholder="Hobbies" name="hobbies" />
+      <input type="url" placeholder="LinkedIn or Portfolio Link" name="link" />
+      <input type="file" id="uploadImg" accept="image/*" />
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resumeOutput" class="template theme-default">
+      <div class="resume-header">
+        <h2 id="outName"></h2>
+        <p id="outGuardian"></p>
+      </div>
+      <div class="resume-body">
+        <p><strong>Email:</strong> <span id="outEmail"></span></p>
+        <p><strong>Phone:</strong> <span id="outPhone"></span></p>
+        <p><strong>Education:</strong> <span id="outEducation"></span></p>
+        <p><strong>Company:</strong> <span id="outCompany"></span></p>
+        <p><strong>Project:</strong> <a href="#" id="outProject" target="_blank"></a></p>
+        <p><strong>Hobbies:</strong> <span id="outHobbies"></span></p>
+        <p><strong>Link:</strong> <a href="#" id="outLink" target="_blank"></a></p>
+        <img id="resumeImg" src="" style="max-width: 100px; display: none;" />
+      </div>
+      <button id="downloadPdf">Download PDF</button>
+    </div>
+  </section>
+
+  <!-- HTML2PDF CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
